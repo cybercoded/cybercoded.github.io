@@ -133,8 +133,7 @@
                 meet you! I'm <span>Tomiwa Oluwadare</span>.
               </h1>
               <p class="hero__description">
-                Based in the UK, I'm a front-end developer passionate about
-                building accessible web apps that users love.
+                Based in the UK, I’m a skilled full-stack developer committed to delivering robust, accessible, and user-focused web applications. With a strong emphasis on aligning technical solutions with business goals, I ensure that every project creates value for stakeholders and provides an exceptional user experience.
               </p>
               <a href="#contact" class="hero__contact underline">Contact me</a>
             </div>
@@ -144,30 +143,45 @@
 
       <section class="skills">
         <div class="wrapper skills__wrapper bottom-border">
-          <h2 class="visually-hidden">Skills</h2>
+          <h2 class="visually-hidden">Full Stack Skills</h2>
           <div class="skills__item">
-            <h3 class="skills__title">HTML</h3>
+            <h3 class="skills__title">JavaScript (React)</h3>
             <p class="skills__description">4 Years Experience</p>
           </div>
           <div class="skills__item">
-            <h3 class="skills__title">CSS</h3>
+            <h3 class="skills__title">Python (Django)</h3>
+            <p class="skills__description">5 Years Experience</p>
+          </div>
+          <div class="skills__item">
+            <h3 class="skills__title">Database Design (MySQL, ProgreSQL, MongoDB DynamoDB)</h3>
+            <p class="skills__description">5 Years Experience</p>
+          </div>
+          <div class="skills__item">
+            <h3 class="skills__title">PHP (Laravel)</h3>
             <p class="skills__description">4 Years Experience</p>
           </div>
           <div class="skills__item">
-            <h3 class="skills__title">JavaScript</h3>
+            <h3 class="skills__title">Cloud (AWS)</h3>
+            <p class="skills__description">3 Years Experience</p>
+          </div>
+        </div>
+          <div class="wrapper skills__wrapper bottom-border">
+          <h2 class="visually-hidden">Data Analysis Skills</h2>
+          <div class="skills__item">
+            <h3 class="skills__title">Visualisation (PowerBI & Chat.js)</h3>
             <p class="skills__description">4 Years Experience</p>
           </div>
           <div class="skills__item">
-            <h3 class="skills__title">Accessibility</h3>
-            <p class="skills__description">4 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">React</h3>
+            <h3 class="skills__title">Data Processing (Excel, Panda & MS Access)</h3>
             <p class="skills__description">3 Years Experience</p>
           </div>
           <div class="skills__item">
-            <h3 class="skills__title">Sass</h3>
+            <h3 class="skills__title">Jupyter Notebook</h3>
             <p class="skills__description">3 Years Experience</p>
+          </div>
+          <div class="skills__item">
+            <h3 class="skills__title">ETL Tools (Fivetran, Talend):</h3>
+            <p class="skills__description">2 Years Experience</p>
           </div>
         </div>
         <img
@@ -354,7 +368,7 @@
               possible.
             </p>
           </div>
-          <form action="" class="contact__form">
+          <form action="" class="contact__form" id="contact-form">
             <div class="contact__control">
               <label for="name" class="visually-hidden">Name</label>
               <input
@@ -496,5 +510,34 @@
         </nav>
       </div>
     </footer>
-  </body>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your user ID
+    emailjs.init('oluwadaretomiwa@gmail.com');
+
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Gather form data
+      var formData = new FormData(event.target);
+
+      // Send email using EmailJS
+      emailjs.sendForm('service_lunj53j', 'template_tobmayp', formData)
+        .then(function(response) {
+          console.log('SUCCESS!', response);
+          alert('Message sent successfully!');
+        }, function(error) {
+          console.error('FAILED...', error);
+          alert('Failed to send message. Please try again later.');
+        });
+    });
+  </script>
+
+</body>
 </html>
