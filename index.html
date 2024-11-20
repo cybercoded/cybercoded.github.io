@@ -368,7 +368,7 @@
               possible.
             </p>
           </div>
-          <form action="" class="contact__form" id="contact-form">
+          <form class="contact__form" iaction="https://formspree.io/f/mjkvooyw" method="POST">
             <div class="contact__control">
               <label for="name" class="visually-hidden">Name</label>
               <input
@@ -442,7 +442,7 @@
         <nav class="header__nav">
           <h2 class="visually-hidden">Navigation</h2>
           <a href="/" class="header__home">
-            adamkeyes
+            Tommy
             <span class="visually-hidden">(to home page)</span>
           </a>
           <a href="" class="header__social">
@@ -514,30 +514,5 @@
 
     <button type="submit">Send Message</button>
   </form>
-
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    // Initialize EmailJS with your user ID
-    emailjs.init('oluwadaretomiwa@gmail.com');
-
-    // Handle form submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      // Gather form data
-      var formData = new FormData(event.target);
-
-      // Send email using EmailJS
-      emailjs.sendForm('service_lunj53j', 'template_tobmayp', formData)
-        .then(function(response) {
-          console.log('SUCCESS!', response);
-          alert('Message sent successfully!');
-        }, function(error) {
-          console.error('FAILED...', error);
-          alert('Failed to send message. Please try again later.');
-        });
-    });
-  </script>
-
 </body>
 </html>
