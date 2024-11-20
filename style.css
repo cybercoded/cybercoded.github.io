@@ -231,6 +231,8 @@ svg {
   top: 0;
   left: 50%;
   translate: -50%;
+  width: 174px;
+  height: auto;
 }
 
 .hero__rings {
