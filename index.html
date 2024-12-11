@@ -155,7 +155,7 @@
           </div>
           <div class="skills__item">
             <h3 class="skills__title">Database Design</h3>
-            <h4>MySQL, ProgreSQL, MongoDB & DynamoDB</h4>
+            <h4>MySQL, PostgreSQL, MongoDB & DynamoDB</h4>
             <p class="skills__description">5 Years Experience</p>
           </div>
           <div class="skills__item">
@@ -209,165 +209,11 @@
 
       <section class="projects">
         <div class="wrapper projects__wrapper">
-          <div class="projects__grid">
+          <div id="repos" class="projects__grid">
             <h2 class="projects__headline header-xl">Projects</h2>
-            <a href="#contact" class="projects__contact underline"
-              >Contact me</a
+            <a href="https://github.com/cybercoded" class="projects__contact underline"
+              >View All</a
             >
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-1-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-1-small.webp"
-                  alt="screenshot of design portfolio website"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Design Portfolio</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-2-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-2-small.webp"
-                  alt="screenshot of learning platform website with different courses"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">E-Learning Landing Page</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-3-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-3-small.webp"
-                  alt="screenshot of To Do App showing a list of active and complete tasks"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Todo Web App</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-4-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-4-small.webp"
-                  alt="screenshot of video player app with grid of thumbnails of movies and TV shows"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Entertainment Web App</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-5-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-5-small.webp"
-                  alt="screenshot of 4-player memory game with circular tiles that have symbols"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Memory Game</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-6-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="/assets/images/thumbnail-project-6-small.webp"
-                  alt="grid of thumbnails of famous works of art"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Art Gallery Showcase</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -525,39 +371,7 @@
         </nav>
       </div>
     </footer>
-<!-- Place this script at the end of the body tag -->
-<script>
-  var form = document.getElementById("my-form");
-  
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-          } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          }
-        })
-      }
-    }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
-    });
-  }
-  form.addEventListener("submit", handleSubmit)
-</script>
   </form>
+  <script src="assets/js/script.js"> </script>
 </body>
 </html>

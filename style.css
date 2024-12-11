@@ -501,7 +501,7 @@ h1 > span {
 
 .projects__image {
   width: 100%;
-  height: auto;
+  height: 300px !important;
 }
 
 .projects__name {
