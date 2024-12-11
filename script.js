@@ -1,5 +1,5 @@
 const username = "cybercoded"; // Replace with your GitHub username
-const token = "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"; // Replace with your token
+const token = "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"; // Replace with your token
 const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`; // Get all repos first
 
 const pinnedApiUrl = `https://api.github.com/users/${username}/repos?affiliation=owner&pinned=true`; // Endpoint for pinned repos
