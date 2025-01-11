@@ -2,7 +2,7 @@ const username = "cybercoded"; // Replace with your GitHub username
 const token = "{{ GIT_TOKEN }}"; 
 // Replace with your token
 const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`; // Get all repos first
-console.log(token);
+console.log('token => ', token);
 
 const pinnedApiUrl = `https://api.github.com/users/${username}/repos?affiliation=owner&pinned=true`; // Endpoint for pinned repos
 
