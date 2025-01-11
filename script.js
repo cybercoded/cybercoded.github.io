@@ -1,5 +1,5 @@
 const username = "cybercoded"; // Replace with your GitHub username
-const token = "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"; 
+const token = "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"; 
 // Replace with your token
 const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`; // Get all repos first
 
